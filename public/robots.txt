@@ -1,0 +1,6 @@
+Sitemap: https://futuredeeptech.com/sitemap
+
+User-agent: *
+Allow: /*
+
+Disallow: /api/*

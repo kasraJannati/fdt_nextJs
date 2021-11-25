@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap");
+
+$fontH1: 80px;
+$fontH2: 50px;
+$fontH3: 40px;
+$fontH4: 42px;
+$fontH5: 30px;
+$fontP: 24px;
+$fontSpan: 14px;
+
+$fontH1-mob: 35px;
+$fontH2-mob: 40px;
+$fontH3-mob: 25px;
+$fontH4-mob: 28px;
+$fontH5-mob: 16px;
+$fontP-mob: 14px;
+$fontSpan-mob: 12px;
+
+$breakpoint-xl: 1200px;
+$breakpoint-lg: 992px;
+$breakpoint-md: 768px;
+$breakpoint-sm: 576px;
+
+$black:#000000;
+$white:#ffffff;
+$main:#44C2AB;
+$gray:#323737;
+$gray_dark:#252828;
+
+$fontMaven:'Maven Pro', sans-serif;
+$fontDm:'DM Serif Display', serif;
+
+$border-radius: 50%;
+
+@mixin centerBox{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@mixin clearStyle{
+  border-radius: 0;
+  border:none;
+  box-shadow: none;
+  outline: unset;
+}
+/**************************** keyframes ************************************/
+@-moz-keyframes rotating {
+  from {
+    transform: rotate(0deg);     
+  }
+  to {
+    transform: rotate(360deg);     
+  }
+}
+@-webkit-keyframes rotating {
+  from {
+    transform: rotate(0deg);     
+  }
+  to {
+    transform: rotate(360deg);     
+  }
+}
+@-o-keyframes rotating {
+  from {
+    transform: rotate(0deg);     
+  }
+  to {
+    transform: rotate(360deg);     
+  }
+}
+@keyframes rotating  {
+  from {
+    transform: rotate(0deg);     
+  }
+  to {
+    transform: rotate(360deg);     
+  }
+}
+
+@-moz-keyframes mars {
+	0%   { filter: grayscale(1); }
+	100% { filter: unset; }
+}
+@-webkit-keyframes mars {
+	0%   { filter: grayscale(1); }
+	100% { filter: unset; }
+}
+@-o-keyframes mars {
+	0%   { filter: grayscale(1); }
+	100% { filter: unset; }
+}
+@keyframes mars {
+	0%   { filter: grayscale(1); }
+	100% { filter: unset; }
+}
+@keyframes marquee {
+	0%   { transform: translateX(0%); }
+	100% { transform: translateX(-100%); }
+}
+@keyframes loadingAnimation {
+  from {
+    opacity: 1;
+    transform: scale(0);
+  }
+  to {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+@keyframes torontoMap {
+  from {
+        
+  }
+  to {
+    fill:rgba(255,255,255,1)
+  }
+}
+@keyframes scaling {
+  from {
+     transform: scale(1);     
+  }
+  to {
+    transform: scale(1.5);     
+  }
+}
+@-moz-keyframes elasticus {
+  0% {
+    transform: scale(1, 0);
+    transform-origin: 0% 0%;
+  }
+  50% {
+    transform: scale(1, 1);
+    transform-origin: 0% 0%;
+  }
+  50.1% {
+    transform: scale(1, 1);
+    transform-origin: 0% 100%;
+  }
+  100% {
+    transform: scale(1, 0);
+    transform-origin: 0% 100%;
+  }
+}
+@-webkit-keyframes elasticus {
+  0% {
+    transform: scale(1, 0);
+    transform-origin: 0% 0%;
+  }
+  50% {
+    transform: scale(1, 1);
+    transform-origin: 0% 0%;
+  }
+  50.1% {
+    transform: scale(1, 1);
+    transform-origin: 0% 100%;
+  }
+  100% {
+    transform: scale(1, 0);
+    transform-origin: 0% 100%;
+  }
+}
+@-o-keyframes elasticus {
+  0% {
+    transform: scale(1, 0);
+    transform-origin: 0% 0%;
+  }
+  50% {
+    transform: scale(1, 1);
+    transform-origin: 0% 0%;
+  }
+  50.1% {
+    transform: scale(1, 1);
+    transform-origin: 0% 100%;
+  }
+  100% {
+    transform: scale(1, 0);
+    transform-origin: 0% 100%;
+  }
+}
+@keyframes elasticus {
+  0% {
+    transform: scale(1, 0);
+    transform-origin: 0% 0%;
+  }
+  50% {
+    transform: scale(1, 1);
+    transform-origin: 0% 0%;
+  }
+  50.1% {
+    transform: scale(1, 1);
+    transform-origin: 0% 100%;
+  }
+  100% {
+    transform: scale(1, 0);
+    transform-origin: 0% 100%;
+  }
+}
+/**************************** end keyframes ************************************/
+body{
+  text-align: center;
+}
+h1{
+  font-family:$fontDm;
+  font-size:$fontH1;
+  color:$white;
+}
+h2{
+  font-size:$fontH2;
+  font-family:$fontDm;
+}
+h3{
+  font-size:$fontH3;
+  font-family:$fontMaven;
+}
+h4{
+  font-size:$fontH4;
+  font-family:$fontDm;
+}
+h5{
+  font-size:$fontH5;
+}
+p{
+  font-size:$fontP;
+  font-family:$fontMaven;
+}
+span{
+  font-family:$fontMaven;
+  font-size:$fontSpan;
+}
+@media (max-width : 992px){
+  h1{
+    font-size:$fontH1-mob;
+  }
+  h2{
+    font-size:$fontH2-mob;
+  }
+  h3{
+    font-size:$fontH3-mob;
+  }
+  h4{
+    font-size:$fontH4-mob;
+  }
+  h5{
+    font-size:$fontH5-mob;
+  }
+  p{
+    font-size:$fontP-mob;
+  }
+  span{
+    font-size:$fontSpan-mob;
+  }
+}
