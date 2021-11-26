@@ -2,9 +2,9 @@ import sgMail from '@sendgrid/mail'
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 export default async (req, res) => {
   const msg = {
-    to: req.body.email,
+    to: 'info@futuredeeptech.com',
     from: 'info@futuredeeptech.com',
-    subject: req.body.firstName +  ' | FDT',
+    subject: req.body.email +  ' | ' + req.body.firstName,
     text: req.body.content,
   };
   console.log(msg)
