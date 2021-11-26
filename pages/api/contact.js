@@ -7,9 +7,7 @@ export default async (req, res) => {
     subject: req.body.firstName +  ' | FDT',
     text: req.body.content,
   };
-
   console.log(msg)
-
   try {
     await sgMail.send(msg);
     res.json({ message: `Email has been sent` })
