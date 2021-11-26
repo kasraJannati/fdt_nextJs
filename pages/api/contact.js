@@ -3,7 +3,7 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 export default async (req, res) => {
   const msg = {
     to: 'info@futuredeeptech.com',
-    from: req.body.firstName,
+    from: req.body.email,
     subject: req.body.firstName +  ' | FDT',
     text: req.body.content,
   };
