@@ -43,8 +43,8 @@ export default function About({data}) {
                       </p>    
                   </section>
               </div>
-              <video muted autoplay="autoplay">
-                <source src="./vid/2.mp4" type="video/mp4" />
+              <video muted autoplay="autoplay" playsinline="true">
+                <source src="./vid/fdtStory.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
           </section>
