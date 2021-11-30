@@ -8,7 +8,7 @@ const Nav = () =>{
 
     const items = {
       "Home": "/",
-      "Our Works": {
+      "Our Work": {
         "programming":"/programming",
         "blockchain & nft":"/blockchain",  
         "content production":"/production",
@@ -27,15 +27,15 @@ const Nav = () =>{
     }
 
     const listItems = Object.keys(items).map((keyName, index) => {
-      if(keyName === 'Our Works'){
+      if(keyName === 'Our Work'){
         return  <li key={index} className="nav-item">
                     <Link href="/">
                         <a className="nav-link text-capitalize" id="projectDropdown" data-bs-toggle="dropdown" aria-expanded="false">{keyName}</a>
                     </Link>
                   <ul className="dropdown-menu" aria-labelledby="projectDropdown">
-                    {Object.keys(items['Our Works']).map((keyName, index) => {
+                    {Object.keys(items['Our Work']).map((keyName, index) => {
                       return  <li key={index}>
-                                <Link href={'/projects'+items['Our Works'][keyName]}>
+                                <Link href={'/projects'+items['Our Work'][keyName]}>
                                     <a className="nav-link text-capitalize"  onClick={closeMenu}> {keyName}</a>
                                 </Link>
                               </li>
