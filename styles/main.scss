@@ -189,12 +189,18 @@ nav{
     padding:56.25% 0 0 0;
     @include centerBox;
     width: 100%;
-    iframe{
-      position:absolute;
-      top:0;
-      left:0;
-      width:100%;
-      height:100%;
+    // iframe{
+    //   position:absolute;
+    //   top:0;
+    //   left:0;
+    //   width:100%;
+    //   height:100%;
+    // }
+    .videoHomePage{
+      position: absolute;
+      width: 70%;
+      height: 100%;
+      @include centerBox;
     }
   }
 }
@@ -917,4 +923,6 @@ footer{
   -o-transform: rotate(-135deg);
   transform: rotate(-135deg);
 }
+
+
 
