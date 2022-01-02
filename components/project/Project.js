@@ -33,6 +33,11 @@ const Project = ({project,index}) => {
             </div>;
     }
 
+    let pdf;
+    if (project.title == 'Metaverse') {
+        pdf = <a href="https://a.storyblok.com/f/128931/x/48032724a1/metaverse_dec17.pdf" target="_blank" className="pdf-link mt-3">More Information</a>
+    }
+
     return (
         <div className="project py-5 my-5" direction={direction}>
             {shapeProject}
@@ -42,6 +47,7 @@ const Project = ({project,index}) => {
                 <p className="w-75 m-0">
                     {project.description}
                 </p>
+                {pdf}
             </div>
             <div className="projectImages" data-aos={right ? 'flip-down': 'flip-up' } data-aos-duration="1500">
                 <div className="projectImagesBox">
@@ -49,10 +55,9 @@ const Project = ({project,index}) => {
                         return <img src={image.filename} alt={image.filename} key={image.id}/>
                     })}
                 </div>
-                <div className="projectImagesBox">
-                     {project.images.map((img) => {
-                        {img}
-                        <img src={img.filename} alt={img.alt} />
+                <div className="projectImagesBox 2">
+                    {project.images.map((image) => {
+                        return <img src={image.filename} alt={image.filename} key={image.id}/>
                     })}
                 </div>
             </div>
