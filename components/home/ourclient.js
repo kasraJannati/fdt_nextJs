@@ -15,7 +15,9 @@ const Ourclient = ({data}) => {
                     <div className="col-lg-6">
                         <section className="clientslogo" >
                             {data.map((image,i) => (
-                                <img src={image.filename} alt={image.alt} key={image.id} />
+                                <a href={image.text} target="_blank">
+                                    <img src={image.media.filename} alt={image.alt} key={image.id} />
+                                </a>
                             ))}
                         </section>
                     </div>
