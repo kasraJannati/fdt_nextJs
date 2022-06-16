@@ -15,7 +15,6 @@ export async function getServerSideProps() {
     return error;
   })
   const data = res.data.story.content;
-  console.log(data)
   return {
     props: {data}
   }
