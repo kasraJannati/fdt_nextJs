@@ -5,6 +5,7 @@ import poly2 from '/public/img/poly2.png';
 import poly3 from '/public/img/poly3.png';
 
 const Project = ({project,index}) => {
+    console.log(project,'project')
     let right = false;
     let direction;
     let shapeProject;
@@ -46,6 +47,12 @@ const Project = ({project,index}) => {
                 <h4>{project.title}</h4>
                 <p className="w-75 m-0">
                     {project.description}
+                    <br></br>
+                    {project.link &&
+                        <a href={project.link.url} target="_blank">
+                            {project.link.url}
+                        </a>
+                    }
                 </p>
                 {pdf}
             </div>

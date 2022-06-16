@@ -9,7 +9,7 @@ const Nav = () =>{
     const items = {
       "Home": "/",
       "Our Work": {
-        "programming":"/programming",
+        "smart contracts":"/smartcontracts",
         "blockchain & nft":"/blockchain",  
         "content production":"/production",
         "coming soon":"/comingsoon",
