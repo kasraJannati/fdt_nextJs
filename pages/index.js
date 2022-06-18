@@ -14,10 +14,10 @@ export async function getServerSideProps() {
   }).catch(error => { 
     return error;
   })
-  const data = res.data.story.content;
-  return {
-    props: {data}
-  }
+  // const data = res.data.story.content;
+  // return {
+  //   props: {data}
+  // }
 }
 
 export default function Home({data}) {
@@ -26,18 +26,18 @@ export default function Home({data}) {
   return (
     <div className="homepage">
       <Head>
-        <title>FDT | {data.h1}</title>
-        <meta name="description" content={data.description} />
+        {/* <title>FDT | {data.h1}</title>
+        <meta name="description" content={data.description} /> */}
       </Head>
-      <Header data = {data}/>
-      <Description data = {data}/>
+      {/* <Header data = {data}/>
+      <Description data = {data}/> */}
       <div className="stepLinkBox">
           {/* <a href="/projects/smartcontracts" className="stepLink"><Step steps={data.smartcontracts}></Step></a>
           <a href="/projects/blockchain" className="stepLink"><Step steps={data.blockchain}></Step></a>
           <a href="/projects/production" className="stepLink"><Step steps={data.content_production}></Step></a>
           <a href="/projects/comingsoon" className="stepLink"><Step steps={data.idea}></Step></a> */}
       </div>
-      <Ourclient data = {data.our_client}/>
+      {/* <Ourclient data = {data.our_client}/> */}
       <Cursor cursorTarget={cursorTarget}/>
     </div>
   )
