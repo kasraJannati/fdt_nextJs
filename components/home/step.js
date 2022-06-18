@@ -5,6 +5,7 @@ import poly3 from '/public/img/poly3.png';
 
 const Step = ({steps}) => {
     let step = steps[0];
+    console.log(step,'step');
     let svgNumber;
     let id;
     if(step.number == 1){
