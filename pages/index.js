@@ -7,18 +7,18 @@ import Ourclient from '../components/home/ourclient'
 import Cursor from '../components/common/cursor'
 import {storyblok} from '../config/storyblok';
 
-export async function getServerSideProps() {
-  const res = await storyblok.get('cdn/stories/homepage/content', {})
-  .then(response => {
-    return response;
-  }).catch(error => { 
-    return error;
-  })
-  // const data = res.data.story.content;
-  // return {
-  //   props: {data}
-  // }
-}
+// export async function getServerSideProps() {
+//   const res = await storyblok.get('cdn/stories/homepage/content', {})
+//   .then(response => {
+//     return response;
+//   }).catch(error => { 
+//     return error;
+//   })
+//   const data = res.data.story.content;
+//   return {
+//     props: {data}
+//   }
+// }
 
 export default function Home({data}) {
   let cursorTarget = ['.description','.ourclient'];
@@ -38,7 +38,7 @@ export default function Home({data}) {
           <a href="/projects/comingsoon" className="stepLink"><Step steps={data.idea}></Step></a> */}
       </div>
       {/* <Ourclient data = {data.our_client}/> */}
-      <Cursor cursorTarget={cursorTarget}/>
+      {/* <Cursor cursorTarget={cursorTarget}/> */}
     </div>
   )
 }
