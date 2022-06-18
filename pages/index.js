@@ -1,11 +1,11 @@
 import Head from 'next/head'
 import Layout from '../layouts/layout'
-import Header from '../components/home/header'
-import Description from '../components/home/description'
-import Step from '../components/home/step'
-import Ourclient from '../components/home/ourclient'
-import Cursor from '../components/common/cursor'
-import {storyblok} from '../config/storyblok';
+// import Header from '../components/home/header'
+// import Description from '../components/home/description'
+// import Step from '../components/home/step'
+// import Ourclient from '../components/home/ourclient'
+// import Cursor from '../components/common/cursor'
+// import {storyblok} from '../config/storyblok';
 
 // export async function getServerSideProps() {
 //   const res = await storyblok.get('cdn/stories/homepage/content', {})
