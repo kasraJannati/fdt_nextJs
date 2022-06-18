@@ -4,7 +4,6 @@ import poly2 from '/public/img/poly2.png';
 import poly3 from '/public/img/poly3.png';
 
 const Step = ({steps}) => {
-    console.log(steps)
     let step = steps[0];
     let svgNumber;
     let id;
