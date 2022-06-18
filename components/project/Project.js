@@ -48,11 +48,11 @@ const Project = ({project,index}) => {
                 <p className="w-75 m-0">
                     {project.description}
                     <br></br>
-                    {project.link &&
+                    {/* {project.link &&
                         <a href={project.link.url} target="_blank">
                             {project.link.url}
                         </a>
-                    }
+                    } */}
                 </p>
                 {pdf}
             </div>
