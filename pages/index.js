@@ -32,10 +32,10 @@ export default function Home({data}) {
       <Header data = {data}/>
       <Description data = {data}/>
       <div className="stepLinkBox">
-          <a href="/projects/smartcontracts" className="stepLink"><Step steps={data.smartcontracts}></Step></a>
+          {/* <a href="/projects/smartcontracts" className="stepLink"><Step steps={data.smartcontracts}></Step></a>
           <a href="/projects/blockchain" className="stepLink"><Step steps={data.blockchain}></Step></a>
           <a href="/projects/production" className="stepLink"><Step steps={data.content_production}></Step></a>
-          <a href="/projects/comingsoon" className="stepLink"><Step steps={data.idea}></Step></a>
+          <a href="/projects/comingsoon" className="stepLink"><Step steps={data.idea}></Step></a> */}
       </div>
       <Ourclient data = {data.our_client}/>
       <Cursor cursorTarget={cursorTarget}/>
