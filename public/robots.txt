@@ -1,4 +1,4 @@
-Sitemap: https://futuredeeptech.com/sitemap
+Sitemap: https://futuredeeptech.com/sitemap.xml
 
 User-agent: *
 Allow: /*
